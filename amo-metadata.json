@@ -1,0 +1,14 @@
+{
+  "categories": ["photos-music-videos", "social-communication"],
+  "summary": {
+    "en-US": "Keep Instagram posts, Reels and Stories playing when you switch tabs or windows. Your own pauses are always respected."
+  },
+  "description": {
+    "en-US": "Tired of Instagram pausing your video the moment you switch to another tab or window? InstaKeep keeps it playing, so you can listen while you do something else.\n\nFeatures\n\n🔄 Smart Detection – pauses you make yourself (click, tap, keyboard or media keys) are always respected. Only the automatic pauses caused by leaving the page are prevented.\n⚡ Lightweight – no background process, no tracking, no external requests. Minimal resource usage.\n🎯 Instagram Only – works exclusively on instagram.com, nowhere else.\n🔧 Easy Toggle – turn it on or off from the toolbar popup. Changes apply instantly, no reload needed.\n🎨 Modern UI – a clean popup with automatic light and dark themes.\n\nWorks with feed posts, Reels and Stories.\n\nPrivacy: InstaKeep collects no data at all. The only thing it stores is your on/off setting, locally in your browser.\n\nInstaKeep is an independent project and is not affiliated with Instagram or Meta."
+  },
+  "homepage": { "en-US": "https://github.com/Antxj/instakeep" },
+  "support_url": { "en-US": "https://github.com/Antxj/instakeep/issues" },
+  "version": {
+    "license": "MIT"
+  }
+}

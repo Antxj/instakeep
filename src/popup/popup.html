@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>InstaKeep</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="card">
+    <header class="brand">
+      <img src="../../icons/icon.svg" alt="" width="40" height="40">
+      <div>
+        <h1>InstaKeep</h1>
+        <p class="tagline">Keep Instagram playing in the background</p>
+      </div>
+    </header>
+
+    <label class="toggle-row" for="toggle">
+      <span class="toggle-text">
+        <span class="label">Keep playing</span>
+        <span class="hint">Posts, Reels and Stories</span>
+      </span>
+      <input type="checkbox" id="toggle" role="switch">
+      <span class="switch" aria-hidden="true"></span>
+    </label>
+
+    <div class="status" id="status" data-state="off" aria-live="polite">
+      <span class="dot"></span>
+      <span id="status-text">Loading…</span>
+    </div>
+  </main>
+
+  <footer>Pauses you make yourself are always respected.</footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
