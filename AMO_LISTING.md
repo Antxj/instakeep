@@ -17,9 +17,9 @@ Tired of Instagram pausing your video the moment you switch to another tab or wi
 **Features**
 
 - 🔄 **Smart Detection** – pauses you make yourself (click, tap, keyboard or media keys) are always respected. Only the automatic pauses caused by leaving the page are prevented.
-- ⚡ **Lightweight** – no background process, no tracking, no external requests. Minimal resource usage.
+- ⚡ **Lightweight** – no constant background work, no tracking, no external requests. Minimal resource usage.
 - 🎯 **Instagram Only** – works exclusively on instagram.com, nowhere else.
-- 🔧 **Easy Toggle** – turn it on or off from the toolbar popup. Changes apply instantly, no reload needed.
+- 🔧 **Easy Toggle** – turn it on or off from the toolbar popup. Changes apply instantly, no reload needed, and the toolbar icon turns grey while it’s off.
 - 🎨 **Modern UI** – a clean popup with automatic light and dark themes.
 
 **Works with** feed posts, Reels and Stories.

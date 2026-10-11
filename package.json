@@ -1,6 +1,6 @@
 {
   "name": "instakeep",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Firefox extension that keeps Instagram videos playing when you switch tabs or windows.",
   "private": true,
   "license": "MIT",

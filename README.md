@@ -16,9 +16,9 @@ Instagram pauses your video the moment you look away – switch to another tab, 
 ## ✨ Features
 
 - 🔄 **Smart Detection** – if *you* pause a video, it stays paused. InstaKeep only stops the automatic pauses that happen when you leave the page.
-- ⚡ **Lightweight** – tiny and fast. Nothing runs in the background and it won't slow down your browser.
+- ⚡ **Lightweight** – tiny and fast. No tracking, no constant background work, and it won’t slow down your browser.
 - 🎯 **Instagram Only** – works on instagram.com and nowhere else.
-- 🔧 **Easy Toggle** – turn it on or off with one click from the toolbar. No page reload needed.
+- 🔧 **Easy Toggle** – turn it on or off with one click from the toolbar. No page reload needed, and the icon turns grey when it’s off.
 - 🎨 **Modern UI** – a clean popup that follows your light or dark theme.
 
 Works with **feed posts**, **Reels** and **Stories**.
@@ -33,7 +33,7 @@ Works with **feed posts**, **Reels** and **Stories**.
 2. Open [instagram.com](https://www.instagram.com/) and play any video.
 3. Switch to another tab or window – the video keeps playing.
 
-To turn it off, click the InstaKeep icon in the toolbar and flip the switch.
+To turn it off, click the InstaKeep icon in the toolbar and flip the switch. The icon turns grey while InstaKeep is off, so you can always tell at a glance.
 
 ## ❓ FAQ
 
