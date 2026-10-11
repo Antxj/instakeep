@@ -62,7 +62,7 @@ No. InstaKeep only runs on instagram.com.
 No. Pauses you make yourself – by clicking, tapping, using the keyboard or your media keys – are always respected.
 
 **Does it work in Chrome?**
-Not at the moment. InstaKeep is made for Firefox (version 128 or newer).
+Not at the moment. InstaKeep is made for Firefox (version 140 or newer).
 
 ## 🔒 Privacy
 

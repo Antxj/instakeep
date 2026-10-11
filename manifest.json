@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "InstaKeep",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Keep Instagram posts, Reels and Stories playing when you switch tabs or windows.",
   "author": "Antxj",
   "homepage_url": "https://github.com/Antxj/instakeep",
@@ -19,30 +19,49 @@
     }
   },
   "background": {
-    "scripts": ["src/background.js"]
+    "scripts": [
+      "src/background.js"
+    ]
   },
-  "permissions": ["storage"],
-  "host_permissions": ["*://*.instagram.com/*"],
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.instagram.com/*"
+  ],
   "content_scripts": [
     {
-      "matches": ["*://*.instagram.com/*"],
-      "js": ["src/inject.js"],
+      "matches": [
+        "*://*.instagram.com/*"
+      ],
+      "js": [
+        "src/inject.js"
+      ],
       "run_at": "document_start",
       "world": "MAIN"
     },
     {
-      "matches": ["*://*.instagram.com/*"],
-      "js": ["src/bridge.js"],
+      "matches": [
+        "*://*.instagram.com/*"
+      ],
+      "js": [
+        "src/bridge.js"
+      ],
       "run_at": "document_start"
     }
   ],
   "browser_specific_settings": {
     "gecko": {
       "id": "instakeep@instakeep.extension",
-      "strict_min_version": "128.0",
+      "strict_min_version": "140.0",
       "data_collection_permissions": {
-        "required": ["none"]
+        "required": [
+          "none"
+        ]
       }
+    },
+    "gecko_android": {
+      "strict_min_version": "142.0"
     }
   }
 }
