@@ -9,6 +9,11 @@
   A free, lightweight extension for Firefox.
 </p>
 
+<p align="center">
+  <a href="https://addons.mozilla.org/firefox/addon/instakeep/"><img src="https://img.shields.io/badge/Firefox-Add--on-FF7139?logo=firefoxbrowser&logoColor=white" alt="Firefox Add-on"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License"></a>
+</p>
+
 ---
 
 Instagram pauses your video the moment you look away – switch to another tab, click on another window, and it stops. **InstaKeep fixes that.** Your posts, Reels and Stories keep playing in the background, so you can keep listening while you do something else.
@@ -25,7 +30,20 @@ Works with **feed posts**, **Reels** and **Stories**.
 
 ## 📥 Install
 
-**Firefox Add-ons:** coming soon.
+<p align="center">
+  <a href="https://addons.mozilla.org/firefox/addon/instakeep/">
+    <img src="https://img.shields.io/badge/Get%20it%20on-Firefox%20Add--ons-FF7139?style=for-the-badge&logo=firefoxbrowser&logoColor=white" alt="Get InstaKeep on Firefox Add-ons" height="44">
+  </a>
+</p>
+
+Or open the [InstaKeep page on Firefox Add-ons](https://addons.mozilla.org/firefox/addon/instakeep/) and click **Add to Firefox**.
+
+## 📸 Screenshots
+
+<p align="center">
+  <img src="store/screenshot-light.png" alt="InstaKeep popup in light theme" width="380">
+  <img src="store/screenshot-dark.png" alt="InstaKeep popup in dark theme" width="380">
+</p>
 
 ## 🚀 How to use
 
