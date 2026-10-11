@@ -20,6 +20,7 @@
       "README.md",
       "AMO_LISTING.md",
       "amo-metadata.json",
+      "store",
       "web-ext-artifacts"
     ]
   }
