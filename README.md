@@ -41,8 +41,8 @@ Or open the [InstaKeep page on Firefox Add-ons](https://addons.mozilla.org/firef
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="store/screenshot-light.png" alt="InstaKeep popup in light theme" width="380">
-  <img src="store/screenshot-dark.png" alt="InstaKeep popup in dark theme" width="380">
+  <img src="store/promo-light.png" alt="InstaKeep popup in light theme" width="100%">
+  <img src="store/promo-dark.png" alt="InstaKeep popup in dark theme" width="100%">
 </p>
 
 ## 🚀 How to use
