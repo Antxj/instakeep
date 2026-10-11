@@ -1,61 +1,62 @@
-# InstaKeep
+<p align="center">
+  <img src="icons/icon.svg" alt="InstaKeep icon" width="128" height="128">
+</p>
 
-A tiny Firefox extension that keeps Instagram videos playing when you switch tabs or windows.
+<h1 align="center">InstaKeep</h1>
 
-Instagram pauses posts, Reels and Stories as soon as the page loses focus or becomes hidden. InstaKeep stops that, while still respecting every pause you make yourself.
+<p align="center">
+  <strong>Keep Instagram videos playing when you switch tabs or windows.</strong><br>
+  A free, lightweight extension for Firefox.
+</p>
 
-## Features
+---
 
-- 🔄 **Smart Detection** – pauses you trigger (click, tap, keyboard, media keys) are always respected; only automatic pauses caused by leaving the page are prevented.
-- ⚡ **Lightweight** – no background script, no polling, no dependencies. Just a few event listeners.
-- 🎯 **Instagram Only** – runs exclusively on `instagram.com`.
-- 🔧 **Easy Toggle** – one on/off switch in the toolbar popup, applied instantly without reloading.
-- 🎨 **Modern UI** – clean popup with automatic light and dark themes.
+Instagram pauses your video the moment you look away – switch to another tab, click on another window, and it stops. **InstaKeep fixes that.** Your posts, Reels and Stories keep playing in the background, so you can keep listening while you do something else.
 
-## How it works
+## ✨ Features
 
-| File | Role |
-| --- | --- |
-| `src/inject.js` | Runs in the page context at `document_start`. Makes `document.hidden`, `visibilityState` and `hasFocus()` always report "visible / focused", swallows `visibilitychange` / window `blur` / `focus` events, and blocks or reverts automatic pauses. |
-| `src/bridge.js` | Isolated content script that mirrors the on/off setting from `storage.local` to a `data-instakeep` attribute on `<html>`, which `inject.js` watches. |
-| `src/popup/` | Toolbar popup with the toggle and status. |
+- 🔄 **Smart Detection** – if *you* pause a video, it stays paused. InstaKeep only stops the automatic pauses that happen when you leave the page.
+- ⚡ **Lightweight** – tiny and fast. Nothing runs in the background and it won't slow down your browser.
+- 🎯 **Instagram Only** – works on instagram.com and nowhere else.
+- 🔧 **Easy Toggle** – turn it on or off with one click from the toolbar. No page reload needed.
+- 🎨 **Modern UI** – a clean popup that follows your light or dark theme.
 
-**Smart detection.** A pause is treated as yours when it happens within one second of a real input (pointer, touch, key, wheel or media key) made *after* the page was last active. Any other pause while the page is hidden or unfocused is ignored, or resumed if it already happened. Media that ended, was removed from the page, or was replaced by another playing video is left alone.
+Works with **feed posts**, **Reels** and **Stories**.
 
-## Development
+## 📥 Install
 
-Requirements: Firefox 128 or newer, Node.js (only for the optional `web-ext` tooling).
+**Firefox Add-ons:** coming soon.
 
-```bash
-npm install
-npm start        # launches a clean Firefox profile with the extension loaded
-npm run lint     # validates the extension with web-ext
-npm run build    # creates a .zip in web-ext-artifacts/
-```
+## 🚀 How to use
 
-Without Node: open `about:debugging#/runtime/this-firefox`, click **Load Temporary Add-on…**, and pick `manifest.json`.
+1. Install InstaKeep.
+2. Open [instagram.com](https://www.instagram.com/) and play any video.
+3. Switch to another tab or window – the video keeps playing.
 
-### Manual test checklist
+To turn it off, click the InstaKeep icon in the toolbar and flip the switch.
 
-- [ ] Play a feed post, a Reel and a Story, then switch tab → keeps playing.
-- [ ] Same, switching to another window or minimizing Firefox → keeps playing.
-- [ ] Pause a video yourself, then switch tab → stays paused.
-- [ ] Pause with a hardware media key → stays paused.
-- [ ] Scroll a playing video out of view → Instagram's normal pause still works.
-- [ ] Turn the toggle off → Instagram behaves normally again (no reload needed).
+## ❓ FAQ
 
-## Installing permanently
+**Does it work on other websites?**
+No. InstaKeep only runs on instagram.com.
 
-Release builds of Firefox only install signed extensions. Upload the zip from `npm run build` to [addons.mozilla.org](https://addons.mozilla.org/developers/) – either *listed* (public) or *unlisted* (self-distributed, signed automatically). The store listing copy lives in [`AMO_LISTING.md`](AMO_LISTING.md).
+**I paused a video and switched tabs. Will it start playing again?**
+No. Pauses you make yourself – by clicking, tapping, using the keyboard or your media keys – are always respected.
 
-## Privacy
+**Does it work in Chrome?**
+Not at the moment. InstaKeep is made for Firefox (version 128 or newer).
 
-InstaKeep collects no data, makes no network requests, and stores a single setting (`enabled`) locally.
+## 🔒 Privacy
 
-## Disclaimer
+InstaKeep collects **no data at all**. It doesn't track you, doesn't send anything anywhere, and doesn't read your Instagram account. The only thing it saves is your on/off setting, stored locally in your browser.
 
-InstaKeep is an independent project and is not affiliated with, endorsed by, or sponsored by Instagram or Meta.
+## 💬 Feedback
 
-## License
+Found a bug or have an idea? [Open an issue](https://github.com/Antxj/instakeep/issues).
 
-[MIT](LICENSE)
+---
+
+<p align="center">
+  <sub>InstaKeep is an independent project and is not affiliated with, endorsed by, or sponsored by Instagram or Meta.<br>
+  Released under the <a href="LICENSE">MIT License</a>.</sub>
+</p>
